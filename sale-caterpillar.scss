@@ -1,0 +1,137 @@
+/*
+  @package tapRoot_apothecary
+  ========
+    SASS
+  ========
+*/
+
+@import '../base/mixins';
+@import '../base/placeholders';
+@import '../base/variables';
+
+
+//ADMIN
+.character-select-container {
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.character-select-item {
+  height: 115px;
+  margin: 2px;
+  background: #eee;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sale-caterpillar-contianer {
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  @include transform( rotate(90deg) );
+  animation: crawl 30s linear infinite;
+}
+.sale-caterpillar {
+  display: block;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.rat {
+  @extend %size-32x32x3;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/rat.png');
+}
+.pigeon {
+  @extend %size-32x32x3;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/pigeon.png');
+}
+.whale {
+  @extend %size-115x40x7;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/whale.png');
+}
+.butterfly {
+  @extend %size-16x20x3;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/butterfly.png');
+}
+.bunny {
+  @extend %size-48x32x4;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/bunny.png');
+}
+.chicken {
+  @extend %size-32x32x3;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/chicken.png');
+}
+.beaver {
+  @extend %size-64x64x3;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/beaver.png');
+}
+.cat {
+  @extend %size-32x32x3;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/cat.png');
+}
+.lobster {
+  @extend %size-60x29x6;
+  background-image: url('http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/lobster.png');
+}
+
+
+/*
+  PLACEHOLDERS
+  ------------------------------------------
+*/
+%size-32x32x3 {
+  width: 32px;
+  height: 32px;
+  animation: sprite96 .5s steps(3) infinite;
+}
+%size-115x40x7 {
+  width: 115px;
+  height: 40px;
+  animation: sprite805 1s steps(7) infinite;
+}
+%size-16x20x3 {
+  width: 16px;
+  height: 20px;
+  animation: sprite48 .5s steps(3) infinite;
+}
+%size-48x32x4 {
+  width: 48px;
+  height: 32px;
+  animation: sprite192 .7s steps(4) infinite;
+}
+%size-64x64x3 {
+  width: 64px;
+  height: 64px;
+  animation: sprite192 .5s steps(3) infinite;
+}
+%size-60x29x6 {
+  width: 60px;
+  height: 29px;
+  animation: sprite360 .5s steps(6) infinite;
+}
+/*
+  KEYFRAMES
+  ------------------------------------------
+*/
+@keyframes crawl {
+  from { top: 100%; }
+  to { top: 0; }
+}
+@keyframes sprite48 {
+  100% { background-position: -48px; }
+}
+@keyframes sprite96 {
+  100% { background-position: -96px; }
+}
+@keyframes sprite192 {
+  100% { background-position: -192px; }
+}
+@keyframes sprite360 {
+  100% { background-position: -360px; }
+}
+@keyframes sprite805 {
+  100% { background-position: -805px; }
+}

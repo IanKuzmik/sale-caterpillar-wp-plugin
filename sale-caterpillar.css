@@ -1,0 +1,218 @@
+/*
+  @package tapRoot_apothecary
+  ========
+    SASS
+  ========
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.character-select-container {
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.character-select-item {
+  height: 115px;
+  margin: 2px;
+  background: #eee;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale-caterpillar-contianer {
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  -webkit-transform: rotate(90deg);
+  -miz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  animation: crawl 30s linear infinite;
+}
+
+.sale-caterpillar {
+  display: block;
+}
+.sale-caterpillar:hover {
+  cursor: pointer;
+}
+
+.rat {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/rat.png");
+}
+
+.pigeon {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/pigeon.png");
+}
+
+.whale {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/whale.png");
+}
+
+.butterfly {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/butterfly.png");
+}
+
+.bunny {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/bunny.png");
+}
+
+.chicken {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/chicken.png");
+}
+
+.beaver {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/beaver.png");
+}
+
+.cat {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/cat.png");
+}
+
+.lobster {
+  background-image: url("http://localhost:8888/xochis/wp-content/themes/apothecary/img/sale-caterpillar/lobster.png");
+}
+
+/*
+  PLACEHOLDERS
+  ------------------------------------------
+*/
+.rat, .pigeon, .chicken, .cat {
+  width: 32px;
+  height: 32px;
+  animation: sprite96 0.5s steps(3) infinite;
+}
+
+.whale {
+  width: 115px;
+  height: 40px;
+  animation: sprite805 1s steps(7) infinite;
+}
+
+.butterfly {
+  width: 16px;
+  height: 20px;
+  animation: sprite48 0.5s steps(3) infinite;
+}
+
+.bunny {
+  width: 48px;
+  height: 32px;
+  animation: sprite192 0.7s steps(4) infinite;
+}
+
+.beaver {
+  width: 64px;
+  height: 64px;
+  animation: sprite192 0.5s steps(3) infinite;
+}
+
+.lobster {
+  width: 60px;
+  height: 29px;
+  animation: sprite360 0.5s steps(6) infinite;
+}
+
+/*
+  KEYFRAMES
+  ------------------------------------------
+*/
+@keyframes crawl {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes sprite48 {
+  100% {
+    background-position: -48px;
+  }
+}
+@keyframes sprite96 {
+  100% {
+    background-position: -96px;
+  }
+}
+@keyframes sprite192 {
+  100% {
+    background-position: -192px;
+  }
+}
+@keyframes sprite360 {
+  100% {
+    background-position: -360px;
+  }
+}
+@keyframes sprite805 {
+  100% {
+    background-position: -805px;
+  }
+}
+
+/*# sourceMappingURL=sale-caterpillar.css.map */
